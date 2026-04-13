@@ -19,7 +19,7 @@ Recipe card written with margin centering technique
 ### Links
 
 - Solution URL: 
-- Live Site URL: 
+- Live Site URL: https://val77-key.github.io/frontendmentor_challenges_recipe/
 
 ### Built with
 
