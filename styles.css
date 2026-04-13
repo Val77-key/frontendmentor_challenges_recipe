@@ -188,6 +188,9 @@ strong {
         background-color: none;
         margin: 0 auto;
     }
+    img { 
+        border-radius: 0;
+        }
 
     .text_wrap {
         border-radius: 0;
