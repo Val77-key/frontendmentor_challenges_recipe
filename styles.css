@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+:root {
+    /*colors*/
+    --rose-800:#7A284E;
+    --rose-50:#FFF7FB;
+    --stone-900:#312E2C;
+    --stone-600:#5F564D;
+    --stone-150:#E3DDD7;
+    --stone-100:#F3E5D7;
+    --brown-800:#854632;
+    --white:#FFFFFF;
+
+    /*spacing*/
+    --spacing-1600:8rem; /*128px*/
+    --spacing-600:3rem; /*48px*/
+    --spacing-500:2.5rem; /*40px*/
+    --spacing-400:2rem; /*32px*/
+    --spacing-300: 1.5rem; /*24px*/
+    --spacing-200: 1rem; /*16px*/
+    --spacing--150: 0.75rem; /*12px*/
+    --spacing-100: 0.5rem; /*8px*/
+
+    --font_heading:"Young Serif", sans-serif;
+    --font_body: "Outfit", sans-serif;
+}
+
+
+body {
+    background-color: var(--stone-100);
+    color: var(--stone-600);
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+
+.image_wrap {
+    margin: var(--spacing-1600) auto 0;
+    width:80%;
+    max-width: 46rem;
+    padding: 2.5rem 2.5rem 1.25rem 2.5rem;
+    background-color: var(--white);
+    border-radius:1.5rem 1.5rem 0 0;
+}
+
+img {
+    border-radius: 0.75rem;
+    max-inline-size: 100%;
+    display: block;
+}
+
+
+.text_wrap {
+    width:80%;
+    max-width: 46rem;
+    margin: 0 auto var(--spacing-1600);
+    background-color: var(--white);
+    padding: 1.25rem 2.5rem 2.5rem 2.5rem; 
+    border-radius:0 0 1.5rem 1.5rem;
+}
+
+.head {
+    margin-bottom: var(--spacing-400);
+}
+.head h1 {
+    font-family: var(--font_heading);
+    font-size: var(--spacing-500);
+    line-height: 100%;
+    color: var(--stone-900);
+    letter-spacing: 0px;
+    margin: 0 0 var(--spacing-300) 0;
+}
+
+.heading_3 {
+    font-family: var(--font_heading);
+    font-size: 1.75rem;
+    color: var(--brown-800);
+    line-height: 100%;
+    letter-spacing: 0px;
+    margin: 0 0 var(--spacing-300) 0;
+}
+.prep_time {
+    background-color: var(--rose-50);
+    margin: var(--spacing-400) 0;
+    padding: var(--spacing-300);
+}
+
+.prep_time h2 {
+    font-size: 1.25rem;
+    line-height: 100%;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: var(--rose-800);
+    margin-bottom:var(--spacing-200) ;
+}
+
+.prep_time li::marker {
+    color:var(--rose-800);
+}
+
+.ingredients, .instructions {
+    margin: var(--spacing-400) 0;
+}
+
+.ingredients li::marker {
+    color: var(--brown-800);
+}
+
+li + li {
+    margin-top: var(--spacing-100);
+}
+
+li {
+    padding-left: var(--spacing-200);
+}
+
+ul, ol {
+    padding-left: var(--spacing-300);
+}
+
+.instructions li::marker {
+    color: var(--brown-800);
+    font-weight: 700;
+}
+
+.nutrition {
+    margin-top: var(--spacing-400);
+}
+.nutrition p {
+    margin: var(--spacing-300) 0;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+th {
+    font-weight: 400;
+    text-align: start;
+    padding: var(--spacing-100) 0;
+}
+
+td {
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: var(--brown-800);
+    padding: var(--spacing-100) 0;
+
+}
+.inner {
+    display: inline-block;
+    transform: translateX(20px);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--stone-150);
+    color: var(--stone-150);
+    margin: 0;
+}
+
+strong {
+    font-weight:700;
+}
+
+@media screen and (max-width: 31.5rem) {
+  
+    .image_wrap {
+        width:100%;
+        padding:0;
+        border-radius: 0;
+        background-color: none;
+        margin: 0 auto;
+    }
+
+    .text_wrap {
+        border-radius: 0;
+        width:100%;
+        margin: 0 auto;
+        padding: 2.5rem var(--spacing-400);
+    }
+}
+    
+
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center; }
+.attribution a { 
+    color: hsl(228, 45%, 44%); }
